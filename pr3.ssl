@@ -1,0 +1,19 @@
+@ program to calculate factorial of 5
+PUSH 1
+PUSH 5
+
+FACTORIAL_LOOP:
+SAME   
+PUSH 1  
+SUB     
+JUMP.EQ.0 FACTORIAL_END      
+JUMP.GT.0 FACTORIAL_LOOP      
+FACTORIAL_END:
+POP
+MUL
+MUL
+MUL
+MUL
+MUL
+PRINT "NUM"   
+HALT        
